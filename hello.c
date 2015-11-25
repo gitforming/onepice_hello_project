@@ -1,9 +1,13 @@
     #include <linux/init.h>         /* printk() */  
     #include <linux/module.h>       /* __init __exit */  
 
+
+
+
+
     static int  __init  hello_init(void)      /*模块加载函数，通过insmod命令加载模块时，被自动执行*/  
     {  
-      printk(KERN_INFO " Hello World enter\n");  
+      printk(KERN_INFO " Hello World enter have git modified\n");
       return 0;  
     }  
     static void  __exit  hello_exit(void)    /*模块卸载函数，当通过rmmod命令卸载时，会被自动执行*/  
