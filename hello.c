@@ -1,7 +1,11 @@
     #include <linux/init.h>         /* printk() */  
     #include <linux/module.h>       /* __init __exit */  
+###新的iss53
 ###
-###
+
+
+
+
     static int  __init  hello_init(void)      /*模块加载函数，通过insmod命令加载模块时，被自动执行*/  
     {  
       printk(KERN_INFO " Hello World enter have git modified\n");    
@@ -9,6 +13,7 @@
       printk(KERN_INFO " 1 2 3 4 5 6 7 8 9 0 \n"); 
       return 0;
     }  
+#####测试合并
     static void  __exit  hello_exit(void)    /*模块卸载函数，当通过rmmod命令卸载时，会被自动执行*/  
     {  
       printk(KERN_INFO " Hello World exit\n ");  
