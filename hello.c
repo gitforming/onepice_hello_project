@@ -4,7 +4,7 @@
 ###
 
 
-
+#newfile
 
     static int  __init  hello_init(void)      /*模块加载函数，通过insmod命令加载模块时，被自动执行*/  
     {  
