@@ -1,7 +1,14 @@
     #include <linux/init.h>         /* printk() */  
     #include <linux/module.h>       /* __init __exit */  
+
+
+
+
 ###
 ###
+    int thisfile = 0;
+
+
     static int  __init  hello_init(void)      /*模块加载函数，通过insmod命令加载模块时，被自动执行*/  
     {  
       printk(KERN_INFO " Hello World enter have git modified\n");    
@@ -19,6 +26,6 @@
       
     MODULE_AUTHOR("dengwei");           /*模块作者，可选*/  
     MODULE_LICENSE("Dual BSD/GPL");     /*模块许可证明，描述内核模块的许可权限，必须*/  
-      
+   ###########################   
     MODULE_DESCRIPTION("A simple Hello World Module"); /*模块说明，可选*/  
     MODULE_ALIAS("a simplest module");                  /*模块说明，可选*/
