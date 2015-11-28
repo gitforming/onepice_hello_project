@@ -6,8 +6,7 @@
       printk(KERN_INFO " Hello World enter have git modified\n");    
       printk(KERN_INFO " one two three four five six seven eight\n");
       printk(KERN_INFO " 1 2 3 4 5 6 7 8 9 0 \n"); 
-      return 0;
-    
+      return 0; 
 
     }  
     static void  __exit  hello_exit(void)    /*模块卸载函数，当通过rmmod命令卸载时，会被自动执行*/  
